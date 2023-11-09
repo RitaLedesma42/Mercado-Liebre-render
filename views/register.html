@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abdf918336.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+
+    
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registrarse</title>
+
+</head>
+<body>
+    
+    <header>
+  
+        <section class="top-header"></section>
+            <!----Logo----->       
+            <div class="logo">
+               <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre">
+            </div>
+
+    <!----Barra de Busqueda----->
+            <div class="search-container">
+                <form action="/resultados-de-busqueda" method="get">
+                    <div class="search-bar">
+                        <input type="text" id="search" name="q" placeholder="Buscar productos, marcas y mas">
+                        <button type="submit" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>        
+                    </div>
+                </form>
+            </div>
+            <div class="compra">
+                <i class="fas fa-hand-holding-usd"></i>
+                <p>Comprá en Cuotas y sin tarjeta de credito</p>
+            </div>           
+        </section>
+
+
+
+    <!----Barra de Navegacion----->
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+
+            <div class="login">
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="/productos">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+            
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </div>
+    </header>        
+
+    <main>
+      <section class="register">
+            <form action="/register" method="POST">
+                <h3>Registro de Usuario</h3>
+                <input class="input" type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Nombre y Apellido" required pattern="^[A-Za-z\s]{2,50}$"
+                    title="Solo se permiten letras y espacios. Mínimo 2 caracteres y máximo 50 caracteres." required>
+                <br>
+                <br>
+                <input class="input" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" pattern="^[a-zA-Z0-9_]{4,16}$"
+                    title="De 4 a 16 caracteres alfanuméricos o guiones bajos" required>
+                <br>
+                <br>
+                <input class="input" type="email" name="email" placeholder="E-mail">
+                <br>
+                <br>
+                <label for="fecha-nac"><b class="fecha-nac">Fecha de nacimiento</b></label>
+                <br>
+                <br>
+                <input class="input" type="date" name="fecha-nac" id="fecha-nac">
+                <br>
+                <br>
+                <input class="input" type="text" name="domicilio" placeholder="Domicilio" required pattern="[a-zA-Z0-9\s\.,#-]+">
+        
+                <h3>Perfil del usuario</h3>
+                <div class="perfil">
+                    <input type="radio" name="perfil" value="comprar" id="comprar">
+                    <label for="comprar">Comprador</label>
+                    <input type="radio" name="perfil" value="vender" id="vender">
+                    <label for="vender">Vendedor</label>
+                </div>
+
+                <h3>Intereses</h3>
+                <div class="intereses">
+                    <div>
+                        <input type="checkbox" name="intereses" value="a" id="a">
+                        <label for="a">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="b" id="b">
+                        <label for="b">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="c" id="c">
+                        <label for="c">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="d" id="d">
+                        <label for="d">Juguetería</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="e" id="e">
+                        <label for="e">Vida sana</label>
+                    </div>
+                </div>
+                
+                <h3>Elegí tu foto de usuario</h3>
+                <input type="file" name="avatar">
+                <br>
+                <br>
+                <input class="input" type="password" name="contraseña" placeholder="Ingresa tu contraseña" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$" 
+                    title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número">
+                <br>
+                <br>
+                <input class="input" type="password" name="confirm" placeholder="Confirmá tu contraseña" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$" 
+                    title="La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número">
+                <br>
+                <br>
+                <input class="send" type="submit" value="Enviar" onclick="window.location.href = '/'">
+                <input class="delete" type="reset" value="Borrar">
+                <br>
+                <br>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!----Pie de Pagina ---->
+        <section class="footer">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="bold">Pagá con tarjeta o en efectivo</div>
+                <p class="texto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+             
+            <div class="gift">
+                <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                <div class="bold">Envío gratis desde $ 2.500</div>
+                <p class="texto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+    
+            <div class="shield">
+                <div class="icon"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="bold">Seguridad, de principio a fin</div>
+                <p class="texto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>    
+            </div>
+               
+        </section>  
+        <div class="copyright-foot">
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+    </footer>
+</body>
+</html>

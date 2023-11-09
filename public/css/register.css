@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    background-color: #ebebeb;
+    margin: 0;
+}
+
+
+/*header*/
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 15px;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+
+
+/*top-header*/
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*logo*/
+
+.logo, .search-container{
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+}
+
+/*Barra de Busqueda*/
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+
+}
+
+#search {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+}
+
+#search-button {
+    background: #fff;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#search-button i {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/*p.compra*/
+
+.compra {
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+
+
+
+/*Barra de Navegacion*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/*menu*/
+
+.burger-menu {
+    display: flex;
+    background-color: #1259c3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+/*main*/
+
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+h3, .fecha-nac{
+    color: #666;
+}
+
+.enviar:hover, input.borrar:hover{
+    background-color: #0022AA;
+}
+.input {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding:15px;
+    width:80%;
+}
+.send, .delete{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    width:80%;
+    background-color: #1259c3;
+    padding:10px;
+    color:white;
+    text-align: center;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: white;
+}
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 12%;
+    margin-right: 12%;;
+
+}
+
+footer i{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3
+}
+
+footer i:hover {
+    color: #00B3E7;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+
+.card , .gift , .shield {
+    padding: 2rem;
+}
+
+.bold {
+    text-align: center;
+    padding-top: 0.3rem;
+    color: #666;
+    margin: 0;
+}
+
+p.texto {
+    text-align: center;
+    margin: 0;
+}
+
+p.copyright {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem; }
+
+
+
+@media screen and (max-width: 575px) {
+    nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 576px){
+    
+    .burger-menu {
+        display: none;
+    }
+
+    .navbar ul, .login ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar ul li, .login ul li {
+        margin-right: 15px;
+        font-size: small;
+    }
+
+    .compra, .logo, .search-container {
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .top-header {
+            margin-bottom: 10px;
+    }
+        
+    .navbar ul, .login ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar ul li, .login ul li{
+        margin-right: 15px;
+        font-size: large;
+    }
+
+    .compra, .logo, .search-container {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+    }     
+}
+    
+    
