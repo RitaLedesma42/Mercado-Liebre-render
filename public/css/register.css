@@ -1,13 +1,12 @@
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #ebebeb;
     margin: 0;
 }
-
 
 /*header*/
 
@@ -18,26 +17,27 @@ header {
     padding-top: 1.5rem;
 }
 
-
-
 /*top-header*/
 
 .top-header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /*logo*/
 
-.logo, .search-container{
-    display: inline-block;
-    width: 50%;
-    padding: 2%;
+.logo{
+    width: 48%;
+    margin-right: 2%;
 }
 
 /*Barra de Busqueda*/
 
+.search-container{
+    width: 50%;
+}
 
 .search-bar {
     display: flex;
@@ -46,7 +46,6 @@ header {
     border-radius: 5px;
     overflow: hidden;
     background-color: #fff;
-
 }
 
 #search {
@@ -69,7 +68,7 @@ header {
     padding: 5px;
 }
 
-/*p.compra*/
+/*anuncio compra*/
 
 .compra {
     margin-top: 3%;
@@ -77,8 +76,6 @@ header {
     margin-bottom: 5%;
     font-size: 15px;
 }
-
-
 
 /*Barra de Navegacion*/
 
@@ -91,8 +88,6 @@ ul li a{
     text-decoration: none;
     color: #000;
 }
-
-
 
 /*menu*/
 
@@ -125,17 +120,18 @@ h3, .fecha-nac{
     color: #666;
 }
 
-.enviar:hover, input.borrar:hover{
+.enviar:hover, .borrar:hover{
     background-color: #0022AA;
 }
+
 .input {
-    border: 1px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
     background-color: #ffffff;
     padding:15px;
     width:80%;
 }
+
 .send, .delete{
     border: 1px solid #ffffff;
     border-radius: 5px;
@@ -154,6 +150,7 @@ h3, .fecha-nac{
 footer{
     background-color: white;
 }
+
 .footer{
     text-align: center;
     display: flex;
@@ -164,7 +161,7 @@ footer{
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-left: 12%;
-    margin-right: 12%;;
+    margin-right: 12%;
 
 }
 
@@ -172,17 +169,12 @@ footer i{
     text-align: center;
     font-size: 2em;
     margin-bottom: 10px;
-    color: #1259c3
+    color: #1259c3;
 }
 
 footer i:hover {
     color: #00B3E7;
 }
-.bold{
-    font-weight: bold;
-}
-
-
 
 .card , .gift , .shield {
     padding: 2rem;
@@ -193,6 +185,7 @@ footer i:hover {
     padding-top: 0.3rem;
     color: #666;
     margin: 0;
+    font-weight: bold;
 }
 
 p.texto {
@@ -202,15 +195,20 @@ p.texto {
 
 p.copyright {
     padding-bottom: 1.5rem;
-    padding-left: 1rem; }
+    padding-left: 1rem; 
+}
 
 
+/*Maximo Mobile */
 
 @media screen and (max-width: 575px) {
     nav {
         display: none;
     }
 }
+
+/*Minimo Tablet*/
+
 @media screen and (min-width: 576px){
     
     .burger-menu {
@@ -229,15 +227,17 @@ p.copyright {
     }
 
     .compra, .logo, .search-container {
-        display: inline-block;
         width: 30%;
     }
 }
 
+
+/*Minimo Desktop */
+
 @media screen and (min-width: 992px) {
 
     .top-header {
-            margin-bottom: 10px;
+        margin-bottom: 10px;
     }
         
     .navbar ul, .login ul{
@@ -252,7 +252,6 @@ p.copyright {
     }
 
     .compra, .logo, .search-container {
-        display: inline-block;
         width: 30%;
     }
 
@@ -263,6 +262,7 @@ p.copyright {
         padding: 0px;
         margin: 0px;
     }     
+
 }
     
     

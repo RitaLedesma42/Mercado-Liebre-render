@@ -19,13 +19,13 @@
     
     <header>
   
-        <section class="top-header"></section>
+        <section class="top-header">
             <!----Logo----->       
             <div class="logo">
                <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre">
             </div>
 
-    <!----Barra de Busqueda----->
+            <!----Barra de Busqueda----->
             <div class="search-container">
                 <form action="/resultados-de-busqueda" method="get">
                     <div class="search-bar">
@@ -66,11 +66,12 @@
             
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
-            </div>
+        </div>
     </header>        
 
     <main>
-      <section class="register">
+        <!--formulario-->
+        <section class="register">
             <form action="/register" method="POST">
                 <h3>Registro de Usuario</h3>
                 <input class="input" type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Nombre y Apellido" required pattern="^[A-Za-z\s]{2,50}$"
