@@ -125,6 +125,7 @@ h3, .fecha-nac{
 }
 
 .input {
+    border:none;
     border-radius: 5px;
     overflow: hidden;
     background-color: #ffffff;
