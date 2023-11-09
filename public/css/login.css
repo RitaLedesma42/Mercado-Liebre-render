@@ -131,7 +131,7 @@ h3{
 }
 
 .send{
-    border: 1px solid #ffffff;
+    border: none;
     border-radius: 5px;
     overflow: hidden;
     background-color: #ffffff;
