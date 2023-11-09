@@ -123,6 +123,7 @@ h3{
 /*formulario*/
 
 .name-user, .pass-w {
+    border:none;
     border-radius: 5px;
     overflow: hidden;
     background-color: #ffffff;
