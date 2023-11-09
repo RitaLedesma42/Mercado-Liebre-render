@@ -24,13 +24,17 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+
 }
+
+
 
 /*logo*/
 
-.logo{
-    width: 48%;
-    margin-right: 2%;
+.logo, .search-container{
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
 }
 
 /*Barra de Busqueda*/
@@ -77,17 +81,22 @@ header {
     font-size: 15px;
 }
 
+
+
 /*Barra de Navegacion*/
 
 nav {
     display: flex;
     justify-content: space-between;
+
 }
 
 ul li a{
     text-decoration: none;
     color: #000;
 }
+
+
 
 /*menu*/
 
@@ -104,7 +113,6 @@ ul li a{
     border-radius: 4px;
     color: #fff;
 }
-
 /*main*/
 
 main{
@@ -148,6 +156,8 @@ h3{
 }
 
 /*footer*/
+
+
 
 footer{
     background-color: white;
