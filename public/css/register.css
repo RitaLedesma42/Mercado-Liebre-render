@@ -71,7 +71,10 @@ header {
 /*anuncio compra*/
 
 .compra {
+    align-items: baseline;
+    display: flex;
     margin-top: 3%;
+    justify-content: end;
     text-align: center;
     margin-bottom: 5%;
     font-size: 15px;
